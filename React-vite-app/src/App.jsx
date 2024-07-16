@@ -1,10 +1,13 @@
 
 import Del from "./Pro1"
-function App() {
 
+
+
+function App() {
+const userName = "Hamza Ahmad";
   return (
  <> <Del/>
- <h2>I am software Engineer</h2>
+ <h2>My name is {userName} and I am software Engineer</h2>
  <p>They called me Script notationer</p>
  </>
   )
