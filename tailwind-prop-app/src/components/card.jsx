@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({userName}) {
+function Card({userName, BtnText = "Click Me"}) {
   return (
     <div className="w-[300px] rounded-md border mt-4">
       <img
@@ -18,7 +18,7 @@ function Card({userName}) {
           type="button"
           className="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
-          Read
+          {BtnText}
         </button>
       </div>
     </div>

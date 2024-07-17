@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Nav from './components/Nav'
 import './App.css'
 import Card from './components/card'
-import Nav from './components/Nav'
 
 export default function App() {
   return (
@@ -12,7 +12,8 @@ export default function App() {
     <h1 className="bg-purple-600 p-4 rounded-xl">
       Hello world!
     </h1>
-    <Card />
+    <Card userName={"MacBook Air"} BtnText='Visit Now'/>
+    <Card userName={"MacBook Pro"}/>
    </>
   )
 }
