@@ -1,13 +1,10 @@
-import React from "react";
-import HW from "./Components/HW";
+import React from 'react'
+import Card from './Components/Card'
 
 const App = () => {
   return (
     <>
-    <div>
-      Hello World
-    </div>
-    <HW/>
+      <Card/>
     </>
   )
 }
