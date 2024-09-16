@@ -5,7 +5,7 @@ const Card = ({ imageSrc, cityName, Description }) => {
     <div className='Card'>
       <div className='grid p-8 text-center gap-6 md:grid-cols-2 md:text-start md:items-center lg:flex lg:flex-col lg:text-center'>
         <div className='w-[100%]'>
-          <img className='border-none rounded-xl w-full h-56 lg:h-52' src={imageSrc} alt={cityName} />
+          <img className='border-none rounded-xl w-full h-full lg:h-52 sm:h-52' src={imageSrc} alt={cityName} />
         </div>
         <div>
           <h1 className='font-bold text-fuchsia-800 text-2xl md:text-3xl mb-2'>{cityName}</h1>
