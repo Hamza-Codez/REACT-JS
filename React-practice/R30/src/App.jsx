@@ -1,13 +1,15 @@
 import React from 'react';
-import { LondonCard, ParisCard, NyCard } from './Components/Card';
-import Worker from './Components/Worker';
-import User from './User';
-import List from './Components/List';
+// import { LondonCard, ParisCard, NyCard } from './Components/Card';
+// import Worker from './Components/Worker';
+// import User from './User';
+// import List from './Components/List';
+// import Button from './Components/Button'
+import {Ustate, Age} from './Components/Ustate';
 
 const App = () => {
   return (
     <>
-      <div className='my-4 mx-1'>
+      {/* <div className='my-4 mx-1'>
         <div className='lg:grid lg:grid-cols-3 '>
           <ParisCard />
           <LondonCard />
@@ -27,7 +29,10 @@ const App = () => {
         <User isLoggedin = {true} userName = 'Jamaal Ahmad' />
         </div>
         <List/>
-      </div>
+      </div> */}
+      {/* <Button/> */}
+      <Ustate/>
+      <Age/>
     </>
   );
 }
