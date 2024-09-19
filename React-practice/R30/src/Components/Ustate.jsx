@@ -1,6 +1,14 @@
 import React, {useState} from 'react'
 
 const Ustate = () => {
+  const [name, setName] = useState('Guest');
+  const toggleName = () => {
+    setName(prevName => (prevName === 'Hamza' ? 'Guest' : 'Hamza'));
+  };
+  const [Employed, setEmployed] = useState(false);
+  const toggleEmp = () => {
+    setEmployed(!Employed);
+  };
   const [count, setCount] = useState(0);
   const update = ()=>{
     if(count<7){
@@ -15,12 +23,13 @@ const Ustate = () => {
   const reset = ()=>{
     setCount(0);
   }
-  const isEmployed = () =>{
-    
-  }
   return (
     <>
-    <div>{count}</div>
+      <p>Name: {name}</p>
+      <button onClick={toggleName}>Username</button>
+      <p>Employment Status: {Employed ? 'yes': 'No'}</p>
+      <button onClick={toggleEmp}>Employed</button>
+      <p>Counter: {count}</p>
       <button onClick={update}>
         click Here!
       </button>
@@ -47,11 +56,12 @@ const Age = () => {
 
   return (
     <>
-      <div>Age: {val}</div>
+      <p>Age: {val}</p>
       <button onClick={incrementAge}>Age</button>
       <button onClick={reset}>Reset</button>
     </>
   );
 };
+
 
 export { Ustate, Age };
