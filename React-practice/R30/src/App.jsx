@@ -4,7 +4,8 @@ import React from 'react';
 // import User from './User';
 // import List from './Components/List';
 // import Button from './Components/Button'
-import {Ustate, Age} from './Components/Ustate';
+// import {Ustate, Age} from './Components/Ustate';
+import Counter from './Components/Counter'
 
 const App = () => {
   return (
@@ -31,9 +32,10 @@ const App = () => {
         <List/>
       </div> */}
       {/* <Button/> */}
-      <Ustate/>
-      <Age/>
-    </>
+      {/* <Ustate/>
+      <Age/> */}
+      <Counter/>
+      </>
   );
 }
 
