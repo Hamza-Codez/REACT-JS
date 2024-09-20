@@ -34,7 +34,8 @@ const App = () => {
       {/* <Button/> */}
       {/* <Ustate/>
       <Age/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      
       </>
   );
 }
