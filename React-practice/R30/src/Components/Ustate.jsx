@@ -14,6 +14,7 @@ const Ustate = () => {
     if(count<7){
       setCount(count+1)
     }
+    
   }
   const degrade = ()=>{
     if(count <= 7 && count !==-7){
