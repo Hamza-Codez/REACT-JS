@@ -6,7 +6,8 @@ import React from 'react';
 // import Button from './Components/Button'
 // import {Ustate, Age} from './Components/Ustate';
 // import Counter from './Components/Counter'
-import OnChnge from './Components/OnChnge';
+// import OnChnge from './Components/OnChnge';
+import ColourPicker from './Components/colourPicker'
 
 const App = () => {
   return (
@@ -36,8 +37,9 @@ const App = () => {
       {/* <Ustate/>
       <Age/> */}
       {/* <Counter/> */}
-      <OnChnge/>
-      </>
+      {/* <OnChnge/> */}
+      <ColourPicker/>
+    </>
   );
 }
 
