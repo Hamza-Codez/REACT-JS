@@ -5,7 +5,8 @@ import React from 'react';
 // import List from './Components/List';
 // import Button from './Components/Button'
 // import {Ustate, Age} from './Components/Ustate';
-import Counter from './Components/Counter'
+// import Counter from './Components/Counter'
+import OnChnge from './Components/OnChnge';
 
 const App = () => {
   return (
@@ -35,7 +36,7 @@ const App = () => {
       {/* <Ustate/>
       <Age/> */}
       {/* <Counter/> */}
-      
+      <OnChnge/>
       </>
   );
 }
