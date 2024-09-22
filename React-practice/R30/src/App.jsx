@@ -7,8 +7,9 @@ import React from 'react';
 // import {Ustate, Age} from './Components/Ustate';
 // import Counter from './Components/Counter'
 // import OnChnge from './Components/OnChnge';
-import ColourPicker from './Components/colourPicker'
-
+// import ColourPicker from './Components/colourPicker'
+// import StateUpdate from './Components/StateUpdate';
+// import ArryUpdate from './Components/ArryUpdate';
 const App = () => {
   return (
     <>
@@ -38,7 +39,10 @@ const App = () => {
       <Age/> */}
       {/* <Counter/> */}
       {/* <OnChnge/> */}
-      <ColourPicker/>
+      {/* <ColourPicker/> */}
+      {/* <StateUpdate/> */}
+      {/* <ArryUpdate/> */}
+
     </>
   );
 }
