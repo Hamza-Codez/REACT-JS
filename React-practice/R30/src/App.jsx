@@ -10,6 +10,8 @@ import React from 'react';
 // import ColourPicker from './Components/colourPicker'
 // import StateUpdate from './Components/StateUpdate';
 // import ArryUpdate from './Components/ArryUpdate';
+import ArryofObj from './Components/ArryofObj';
+
 const App = () => {
   return (
     <>
@@ -42,7 +44,7 @@ const App = () => {
       {/* <ColourPicker/> */}
       {/* <StateUpdate/> */}
       {/* <ArryUpdate/> */}
-
+      <ArryofObj/>
     </>
   );
 }
