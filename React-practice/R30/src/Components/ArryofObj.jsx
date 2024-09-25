@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-
-const ArryofObj = () => {
+import React from "react";
+import { useState } from "react";
+function ArrayOfObj() {
   const [car, setCar] = useState([]);
   const [year, setYear] = useState(new Date().getFullYear());
   const [company, setcompany] = useState("");
@@ -9,73 +9,70 @@ const ArryofObj = () => {
 
   function addCar() {
     const newCar = {
-      year: 2000,
-      company: "Ford",
-      model: "Mustang",
-      varient: "Sports",
+      year: year,
+      company: company,
+      model: model,
+      varient: varient,
     };
-    setCar((c) => [...c, newCar]);
-  }
-  // function RemoveaCar(){
-  //   setCar(c=>[...c, newCar ]);
-  // }
-  const RemoveCar = ()=>{
-    
+
+    setCar((car) => [...car, newCar]);
+    setcompany("");
+    setmodel("");
+    setvarient("");
   }
 
-
-
-  function carYear(e) {
-    setYear(e.target.value);
-  }
-  function carCompany(e) {
-    setcompany(e.target.value);
-  }
-  function carModel() {
-    setmodel(e.target.value);
-  }
-  function carVarient() {
-    setvarient(e.target.value);
-  }
+  const RemoveHandler = (i) => {
+    setCar((c) => c.filter((car, index) => index !== i));
+  };
 
   return (
     <>
       <h2>List of cars</h2>
-      <ul>
-        {car.map((car, index) => (
-          <li key={index}>
-            {car.year} {car.company} {car.model} {car.varient}
-            <button onClick={removeCar}>Remove Car</button>
-          </li>
-          
-        ))}
-      </ul>
-      <input type="number" value={year} onChange={carYear} />
+
+      <input
+        type="number"
+        value={year}
+        onChange={(e) => setYear(e.target.value)}
+      />
       <br />
       <input
         type="text"
         value={company}
-        onChange={carCompany}
+        onChange={(e) => setcompany(e.target.value)}
         placeholder="Enter the car Company"
       />
       <br />
       <input
         type="text"
         value={model}
-        onChange={carModel}
+        onChange={(e) => setmodel(e.target.value)}
         placeholder="Enter the car model"
       />
       <br />
       <input
         type="text"
         value={varient}
-        onChange={carVarient}
+        onChange={(e) => setvarient(e.target.value)}
+        
         placeholder="Enter the car varient"
       />
       <br />
       <button onClick={addCar}>Add Car</button>
+
+      <ul>
+        {car.length > 0 ? (
+          car.map((car, index) => (
+            <li key={index}>
+              {car.year} {car.company} {car.model} {car.varient}
+              <button onClick={() => RemoveHandler(index)}>Remove Car</button>
+            </li>
+          ))
+        ) : (
+          <li>No cars added yet.</li>
+        )}
+      </ul>
     </>
   );
-};
+}
 
-export default ArryofObj;
+export default ArrayOfObj;
