@@ -45,6 +45,7 @@ const App = () => {
       {/* <StateUpdate/> */}
       {/* <ArryUpdate/> */}
       <ArryofObj/>
+      
     </>
   );
 }
