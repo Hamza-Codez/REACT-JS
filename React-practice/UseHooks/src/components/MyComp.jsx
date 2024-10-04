@@ -4,7 +4,6 @@ This component re-renders
 This component mounts
 The state of the value
 
-
 1. useEffect (() => {}) Runs after every re-render
 2. useEffect (() => {}, []) Runs only on mount
 3. useEffect(()=> {}, [value]) Runs on mount + when value Changes
@@ -33,4 +32,31 @@ Clean Up when a component unmounts*/
 15 // #3 Subscriptions (real-time updates)
 16 // #4 Fetching Data from an API
 17 // #5 Clean up when a component unmounts
-18
+
+
+
+import React, { useEffect, useState } from 'react'
+
+
+const MyComp = () => {
+  const [count, setCount] = useState(0);
+  function addcount(){
+    setCount(c => c+1)
+  }
+  function substractcount(){
+    setCount(c => c-1)
+  }
+
+  useEffect(()=>{
+    document.title = `count: ${count}`;
+  });
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={addcount}>Add</button>
+      <button onClick={substractcount}>Substract</button>
+    </div>
+  )
+}
+
+export default MyComp
