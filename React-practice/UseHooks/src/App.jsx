@@ -1,10 +1,12 @@
 import React from 'react'
-import MyComp from './components/MyComp'
+import Nav from './components/Nav'
+// import MyComp from './components/MyComp'
 
 const App = () => {
   return (
     <div>
-      <MyComp/>
+      {/* <MyComp/> */}
+      <Nav/>
     </div>
   )
 }

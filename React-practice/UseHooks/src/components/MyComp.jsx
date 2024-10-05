@@ -35,28 +35,29 @@ Clean Up when a component unmounts*/
 
 
 
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 
 
-const MyComp = () => {
-  const [count, setCount] = useState(0);
-  function addcount(){
-    setCount(c => c+1)
-  }
-  function substractcount(){
-    setCount(c => c-1)
-  }
+// const MyComp = () => {
+//   const [count, setCount] = useState(0);
+//   function addcount(){
+//     setCount(c => c+1)
+//   }
+//   function substractcount(){
+//     setCount(c => c-1)
+//   }
 
-  useEffect(()=>{
-    document.title = `count: ${count}`;
-  });
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={addcount}>Add</button>
-      <button onClick={substractcount}>Substract</button>
-    </div>
-  )
-}
+//   useEffect(()=>{
+//     document.title = `count: ${count}`;
+//   }, [count]);
+//   return (
+//     <div>
+//       <p>Count: {count}</p>
+//       <button onClick={addcount}>Add</button>
+//       <button onClick={substractcount}>Substract</button>
+//     </div>
+//   )
+// }
 
-export default MyComp
+// export default MyComp
+
