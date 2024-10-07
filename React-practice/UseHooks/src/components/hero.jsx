@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <section className='relative p-8 bg-deepBlue text-white'>
 
-      <div className='flex flex-row mx-8 gap-9 items-center'>
-        <div className='space-y-8 w-[40%]'>
+      <div className='flex flex-row mx-8 gap-[14rem] items-center'>
+        <div className='space-y-8 w-[50%]'>
           <h1 className='text-white font-mulish font-bold text-[40px] leading-[1.2]'>Power Your Finance Grow Your Business</h1>
           <div className='w-6 h-1 bg-greenLight'>
           </div>
