@@ -1,6 +1,6 @@
 import React from 'react'
 
-const lineStyle = 'absolute bottom-0 w-full h-1 bg-blue-700 hidden group-hover:block transition-all duration-200';
+const lineStyle = 'absolute bottom-0 w-full h-[5px] bg-gradient-to-bl from-blue-900 to-white hidden group-hover:block transition-all duration-200';
 const navElementStyle = 'text-white hover:text-blue-900 py-4 cursor-pointer transition-all duration-200 relative group'
 
 const Nav = () => {
