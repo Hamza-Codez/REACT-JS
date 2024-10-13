@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const lineStyle = 'absolute bottom-0 w-full h-[5px] bg-gradient-to-bl from-blue-900 to-white hidden group-hover:block transition-all duration-200';
 const navElementStyle = 'text-white hover:text-blue-900 py-4 cursor-pointer transition-all duration-200 relative group'
@@ -9,20 +9,20 @@ const Nav = () => {
   return (
     <>
     <nav className='flex items-center justify-between px-9 h-14 bg-gradient-to-r from-blue-300 to-blue-500 '>
-      <Link to='/'>
+      <NavLink to='/'>
         <img className='w-[60%]' src="/images/icon.png"/>
-      </Link>
+      </NavLink>
       <ul className='font-mulish flex space-x-7 items-center'>
         <li className={`${navElementStyle}`}>
-          <Link to="/payment">
+          <NavLink to="/payment" className={({isActive})=> isActive ? 'text-blue-800': 'text-white'}>
             Payments
-          </Link>
+          </NavLink>
           <div className={`${lineStyle}`}></div>
         </li>
         <li className={`${navElementStyle}`}>
-          <Link to="/banking">
+          <NavLink to="/banking" className={({isActive})=> isActive ? 'text-blue-800': 'text-white'}>
             Banking
-          </Link>
+          </NavLink>
           <div className={`${lineStyle}`}></div>
         </li>
         <li className={`${navElementStyle}`}>
