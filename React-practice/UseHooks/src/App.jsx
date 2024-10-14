@@ -39,9 +39,14 @@ const router = createBrowserRouter([
         <Banking/>
       </div>
     ),
-    children:[
+    children: [
       {
-         path:'/insurance'
+        path: '/insurance',
+        element: (
+          <div>
+            <h1>Hellow</h1>
+          </div>
+        )
       },
       {
          path:'/finance'
