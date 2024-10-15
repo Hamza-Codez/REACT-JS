@@ -2,14 +2,14 @@ import React from 'react';
 import Nav from './components/Nav';
 import Hero from './components/hero';
 import Feature from './components/Feature';
-import Payments from './components/Payments'
+import Payments from './components/Payments';
 import Banking from './components/Banking';
 import Loans from './components/Loans';
+import Insuarnce from './components/Insuarnce';
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
-import { Children } from 'react';
 
 const router = createBrowserRouter([
   {
@@ -27,40 +27,33 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Nav />
-        <Payments/>
+        <Payments />
       </div>
     ),
   },
   {
     path: '/banking',
-    element: (
+    element:
       <div>
         <Nav />
-        <Banking/>
-      </div>
-    ),
-    children: [
-      {
-        path: '/insurance',
-        element: (
+        <Banking />
+      </div>,
+      children:[
+        {
+          path: 'Insurance',
+          element:
           <div>
-            <h1>Hellow</h1>
+            <Insuarnce/>
           </div>
-        )
-      },
-      {
-         path:'/finance'
-      },
-      {
-         path:'/loans',
-         element: (
-           <div>
-             <Nav/>
+        },
+        {
+          path: 'loans',
+          element:
+          <div>
             <Loans/>
-           </div>
-         ),
-      }
-    ]
+          </div>
+        },
+      ]
   },
 ]);
 
