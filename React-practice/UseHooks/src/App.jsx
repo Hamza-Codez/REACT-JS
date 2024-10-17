@@ -6,6 +6,7 @@ import Payments from './components/Payments';
 import Banking from './components/Banking';
 import Loans from './components/Loans';
 import Insuarnce from './components/Insuarnce';
+import Accordion from './components/Panel'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
         <Nav />
         <Hero />
         <Feature />
+        <Accordion />
       </div>
     ),
   },

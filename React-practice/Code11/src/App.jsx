@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Card2 from './components/Card2';
 import Card from './components/Card'
 import BUtton from './components/BUtton'
 
@@ -11,6 +12,14 @@ const App = () => {
   function reset(){
     setCount(0);
   }
+
+  //State Lifting in React
+      {/* Create State */}
+      {/* manage State */}
+      {/* Change State */}
+      {/* State Syncronization in every children */}
+      const [name, setName] = useState("");
+
   return (
     <>
       <Card name="Hamza">
@@ -28,6 +37,13 @@ const App = () => {
       <BUtton clicked={reset} text="Clear"/>
       <h1>{count}</h1>
       
+
+
+
+      <div>
+        <Card2 name={name} setName={setName}/>
+          <p>I am inside the parent Element & my Name is : {name} </p>
+      </div>
     </>
   );
 };
