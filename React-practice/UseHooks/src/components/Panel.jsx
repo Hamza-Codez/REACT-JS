@@ -9,7 +9,7 @@ function Panel({ title, children, isActive, onShow}) {
       <p className='text-sm text-gray-800 font-semibold leading-4 px-5 py-5'>{children}</p>
         ) : (
       <button 
-      className='bg-slate-700 px-2 text-sm rounded-md transition-all duration-300 ease-in hover:cursor-pointer hover:scale-105' 
+      className='bg-slate-700 px-2 text-[13px] rounded-md transition-all duration-300 ease-out hover:cursor-pointer hover:text-[14px]' 
       onClick={onShow}
     >
       Show
