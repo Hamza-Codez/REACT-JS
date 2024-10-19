@@ -3,6 +3,7 @@ import React from 'react';
 // import Card from './components/Card'
 // import BUtton from './components/BUtton'
 import EventHandle from './components/EventHandle';
+import UseEffect from './components/UseEffect';
 
 const App = () => {
 
@@ -44,9 +45,10 @@ const App = () => {
         <p>I am inside the parent Element & my Name is : {name} </p>
       </div> */}
 
-      <div>
+      {/* <div>
         <EventHandle />
-      </div>
+      </div> */}
+      <UseEffect/>
       
     </>
   );
