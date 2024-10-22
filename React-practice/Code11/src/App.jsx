@@ -1,4 +1,6 @@
-import React, { createContext, useState } from 'react';
+import React from 'react';
+// import React, { createContext, useState } from 'react';
+import Form from './components/Form';
 // import Card2 from './components/Card2';
 // import Card from './components/Card'
 // import BUtton from './components/BUtton'
@@ -6,11 +8,11 @@ import React, { createContext, useState } from 'react';
 
   //Use ContextHooks
   //Step1: Create Context
- const UserContext = createContext();
+//  const UserContext = createContext();
   //Step2: wrap all the child components in a provider which you want to be the (consumer of the value)
   //Step3: Pass A Value
   // Now you can consume it in any Component
-  import ChildA from './components/ChildA';
+  // import ChildA from './components/ChildA';
   
 const App = () => {
 
@@ -30,7 +32,7 @@ const App = () => {
       // const [name, setName] = useState("");
       // import UseEffect from './components/UseEffect';
 
-  const [user, setUser] = useState({ name: "John", age: 25 });
+  // const [user, setUser] = useState({ name: "John", age: 25 });
 
   return (
     <>
@@ -61,13 +63,17 @@ const App = () => {
       {/* <UseEffect/> */}
 
       
-      <UserContext.Provider value={user}>
+      {/* <UserContext.Provider value={user}>
         <ChildA/>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+
+
+      <Form />
     </>
   );
 };
 
 export default App;
-export { UserContext };
+// export { UserContext };
 
