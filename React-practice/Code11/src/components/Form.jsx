@@ -6,21 +6,41 @@ export default function Form() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
 
-  console.log(watch("example")); // watch input value by passing the name of it
-
+  console.log(watch("example")); 
   return (
-    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)}>
-      {/* register your input into the hook by invoking the "register" function */}
-      <input defaultValue="test" {...register("example")} />
-
-      {/* include validation with required or other standard HTML validation rules */}
-      <input {...register("exampleRequired", { required: true })} />
-      {/* errors will return when field validation fails */}
-      {errors.exampleRequired && <span>This field is required</span>}
-
-      <input type="submit" />
-    </form>
+    <>
+      <form className='flex flex-col gap-5 items-center justify-center h-[600px] ' onSubmit={handleSubmit(onSubmit)}>
+        <div>
+          <label>
+            First Name 
+          </label>
+          <input className='border-2 rounded-md mx-2 pl-2'
+           {...register("firstName")}
+           />
+        </div>
+        <div>
+          <label>
+            Middle Name 
+          </label>
+          <input className='border-2 rounded-md mx-2 pl-2' 
+           {...register("middleName")}
+          />
+        </div>
+        <div>
+          <label>
+            Last Name
+          </label>
+          <input className='border-2 rounded-md mx-2 pl-2' 
+          {...register("lastName")}
+          />
+        </div>
+      </form>
+    </>
   );
 }
 
+
+/*    <input defaultValue="test" {...register("example")} />
+      <input {...register("exampleRequired", { required: true })} />
+      {errors.exampleRequired && <span>This field is required</span>}
+      <input type="submit" /> */
