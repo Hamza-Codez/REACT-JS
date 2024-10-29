@@ -56,5 +56,3 @@ Each project will highlight specific React concepts and best practices:
 Feel free to clone, fork, or contribute to this repository! Let’s learn and grow together in the world of React.
 
 ---
-
-This will give your GitHub README a structured, inviting look, and make it easier for others to follow along with your series!
